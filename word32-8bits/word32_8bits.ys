@@ -1,0 +1,8 @@
+read_verilog word32_8bits_c.v
+hierarchy -check -top word32_8bits_c
+proc; opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+clean
+write_verilog word32_8bits_e.v
