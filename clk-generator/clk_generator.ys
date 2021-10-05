@@ -1,0 +1,14 @@
+read_verilog clk_generator_c.v
+hierarchy -check -top clk_generator_c
+proc_arst -global_arst !clk_4f_c low;
+proc_arst -global_arst !clk_2f_c low;
+proc_arst -global_arst !clk_f_c low;
+proc_arst -global_arst !conteo_4 high;
+proc_arst -global_arst !conteo_2 high;
+proc_arst -global_arst !conteo high;
+opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+clean
+write_verilog clk_generator_e.v
