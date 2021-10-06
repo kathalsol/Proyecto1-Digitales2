@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Oct  6 18:17:17 2021
+[*]
+[dumpfile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/bits8-32word/prueba_bits8_32word.vcd"
+[dumpfile_mtime] "Wed Oct  6 18:15:28 2021"
+[dumpfile_size] 6609
+[savefile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/bits8-32word/prueba_bits8_32word.gtkw"
+[timestart] 0
+[size] 1294 599
+[pos] -51 -1
+*-13.311992 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+testbench_bits8_32word.clk_4f
+testbench_bits8_32word.valid_in
+@22
+testbench_bits8_32word.Data_in[7:0]
+@200
+-conductual
+@28
+testbench_bits8_32word.valid_out_c
+@22
+testbench_bits8_32word.Data_out_c[31:0]
+@200
+-estructural
+@28
+testbench_bits8_32word.valid_out_e
+@22
+testbench_bits8_32word.Data_out_e[31:0]
+@200
+-checker
+@28
+testbench_bits8_32word.probador_1.checker[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
