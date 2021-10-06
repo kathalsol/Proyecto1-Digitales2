@@ -1,5 +1,6 @@
 module probador_word32_8bits (
 	output reg clk_4f,
+	output reg reset,
 	output reg valid_in,
 	output reg [31:0] Data_in,
 	input valid_out_c,
@@ -14,9 +15,11 @@ module probador_word32_8bits (
 		$dumpfile ("prueba_word32_8bits.vcd");
 		$dumpvars;
 		
+		reset <= 0;
 		valid_in <= 0;
 		Data_in <= 8'h0;
 		@(posedge clk_4f);
+		reset <= 1;
 		valid_in <= 1;
 		Data_in <= 'hFFAAFFBB;
 		@(posedge clk_4f);
