@@ -21,8 +21,15 @@ module bits8_32word_c (
 			valid_out_c <= 0;
 			Data_out_c <= 32'b0;
 		end
-		else if (valid_in) contador <= contador + 1;
+		else if (valid_in) 
+			case(contador)
+			2'b00: contador <= contador + 1;
+			2'b01: contador <= contador + 1;
+			2'b10: contador <= contador + 1;
+			//contador <= contador + 1;
+			endcase
 	end
+
 	always @(posedge clk_4f_c) begin
 		if (valid_in) begin
 			case (contador)
