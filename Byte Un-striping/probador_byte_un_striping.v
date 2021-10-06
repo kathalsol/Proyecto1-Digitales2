@@ -5,9 +5,10 @@ module probador_byte_un_striping (
                             output reg [31:0]lane_0,
                             output reg valid_1,
                             output reg [31:0]lane_1,
-                            input [31:0]data_out,
-                            input valid_out 
-                                                    );
+                            input [31:0]data_out_c,
+                            input valid_out_c, 
+                            input [31:0]data_out_e, 
+                            input valid_out_e );
 
     // Reloj
 	initial	clk_2f 	<= 0;			// Valor inicial al reloj, sino siempre sera indeterminado
@@ -96,4 +97,18 @@ module probador_byte_un_striping (
 	//Finalizar la simulacion y guardar valores
     $finish;
     end
+
+
+
+
+    reg [1:0] checker; 
+	always @(*) begin
+		if (data_out_c== data_out_e) checker[1] = 1;
+		else checker[1] = 0;
+
+		if (valid_out_c == valid_out_e) checker[0] = 1;
+		else checker[0] = 0;
+	end
+
+
 endmodule

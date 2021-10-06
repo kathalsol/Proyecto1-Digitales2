@@ -2,7 +2,7 @@
 
 (* top =  1  *)
 (* src = "byte_unstriping_sintetizado.v:21" *)
-module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1, data_out_sint, valid_out_sint);
+module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1, data_out_e, valid_out_e);
   (* src = "byte_unstriping_sintetizado.v:35" *)
   wire [1:0] _000_;
   wire _001_;
@@ -145,7 +145,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   (* src = "byte_unstriping_sintetizado.v:31" *)
   wire [1:0] counter;
   (* src = "byte_unstriping_sintetizado.v:28" *)
-  output [31:0] data_out_sint;
+  output [31:0] data_out_e;
   (* src = "byte_unstriping_sintetizado.v:25" *)
   input [31:0] lane_0;
   (* src = "byte_unstriping_sintetizado.v:27" *)
@@ -155,7 +155,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   (* src = "byte_unstriping_sintetizado.v:26" *)
   input valid_1;
   (* src = "byte_unstriping_sintetizado.v:29" *)
-  output valid_out_sint;
+  output valid_out_e;
   NOR _134_ (
     .A(counter[0]),
     .B(lane_0[12]),
@@ -174,7 +174,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _137_ (
     .A(_074_),
     .B(_076_),
-    .Y(data_out_sint[12])
+    .Y(data_out_e[12])
   );
   NOR _138_ (
     .A(counter[0]),
@@ -194,7 +194,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _141_ (
     .A(_077_),
     .B(_079_),
-    .Y(data_out_sint[13])
+    .Y(data_out_e[13])
   );
   NOR _142_ (
     .A(counter[0]),
@@ -214,7 +214,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _145_ (
     .A(_080_),
     .B(_082_),
-    .Y(data_out_sint[14])
+    .Y(data_out_e[14])
   );
   NOR _146_ (
     .A(counter[0]),
@@ -234,7 +234,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _149_ (
     .A(_083_),
     .B(_085_),
-    .Y(data_out_sint[15])
+    .Y(data_out_e[15])
   );
   NOR _150_ (
     .A(counter[0]),
@@ -254,7 +254,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _153_ (
     .A(_086_),
     .B(_088_),
-    .Y(data_out_sint[16])
+    .Y(data_out_e[16])
   );
   NOR _154_ (
     .A(counter[0]),
@@ -274,7 +274,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _157_ (
     .A(_089_),
     .B(_091_),
-    .Y(data_out_sint[17])
+    .Y(data_out_e[17])
   );
   NOR _158_ (
     .A(counter[0]),
@@ -294,7 +294,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _161_ (
     .A(_092_),
     .B(_094_),
-    .Y(data_out_sint[18])
+    .Y(data_out_e[18])
   );
   NOR _162_ (
     .A(counter[0]),
@@ -314,7 +314,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _165_ (
     .A(_095_),
     .B(_097_),
-    .Y(data_out_sint[19])
+    .Y(data_out_e[19])
   );
   NOR _166_ (
     .A(counter[0]),
@@ -334,7 +334,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _169_ (
     .A(_098_),
     .B(_100_),
-    .Y(data_out_sint[20])
+    .Y(data_out_e[20])
   );
   NOR _170_ (
     .A(counter[0]),
@@ -354,7 +354,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _173_ (
     .A(_101_),
     .B(_103_),
-    .Y(data_out_sint[21])
+    .Y(data_out_e[21])
   );
   NOR _174_ (
     .A(counter[0]),
@@ -374,7 +374,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _177_ (
     .A(_104_),
     .B(_106_),
-    .Y(data_out_sint[22])
+    .Y(data_out_e[22])
   );
   NOR _178_ (
     .A(counter[0]),
@@ -394,7 +394,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _181_ (
     .A(_107_),
     .B(_109_),
-    .Y(data_out_sint[23])
+    .Y(data_out_e[23])
   );
   NOR _182_ (
     .A(counter[0]),
@@ -414,7 +414,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _185_ (
     .A(_110_),
     .B(_112_),
-    .Y(data_out_sint[24])
+    .Y(data_out_e[24])
   );
   NOR _186_ (
     .A(counter[0]),
@@ -434,7 +434,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _189_ (
     .A(_113_),
     .B(_115_),
-    .Y(data_out_sint[25])
+    .Y(data_out_e[25])
   );
   NOR _190_ (
     .A(counter[0]),
@@ -454,7 +454,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _193_ (
     .A(_116_),
     .B(_118_),
-    .Y(data_out_sint[26])
+    .Y(data_out_e[26])
   );
   NOR _194_ (
     .A(counter[0]),
@@ -474,7 +474,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _197_ (
     .A(_119_),
     .B(_121_),
-    .Y(data_out_sint[27])
+    .Y(data_out_e[27])
   );
   NOR _198_ (
     .A(counter[0]),
@@ -494,7 +494,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _201_ (
     .A(_122_),
     .B(_124_),
-    .Y(data_out_sint[28])
+    .Y(data_out_e[28])
   );
   NOR _202_ (
     .A(counter[0]),
@@ -514,7 +514,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _205_ (
     .A(_125_),
     .B(_127_),
-    .Y(data_out_sint[29])
+    .Y(data_out_e[29])
   );
   NOR _206_ (
     .A(counter[0]),
@@ -534,7 +534,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _209_ (
     .A(_128_),
     .B(_130_),
-    .Y(data_out_sint[30])
+    .Y(data_out_e[30])
   );
   NOR _210_ (
     .A(counter[0]),
@@ -554,11 +554,11 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _213_ (
     .A(_131_),
     .B(_133_),
-    .Y(data_out_sint[31])
+    .Y(data_out_e[31])
   );
   BUF _214_ (
     .A(valid_0),
-    .Y(valid_out_sint)
+    .Y(valid_out_e)
   );
   NOT _215_ (
     .A(counter[0]),
@@ -739,7 +739,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _257_ (
     .A(_038_),
     .B(_040_),
-    .Y(data_out_sint[0])
+    .Y(data_out_e[0])
   );
   NOR _258_ (
     .A(counter[0]),
@@ -759,7 +759,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _261_ (
     .A(_041_),
     .B(_043_),
-    .Y(data_out_sint[1])
+    .Y(data_out_e[1])
   );
   NOR _262_ (
     .A(counter[0]),
@@ -779,7 +779,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _265_ (
     .A(_044_),
     .B(_046_),
-    .Y(data_out_sint[2])
+    .Y(data_out_e[2])
   );
   NOR _266_ (
     .A(counter[0]),
@@ -799,7 +799,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _269_ (
     .A(_047_),
     .B(_049_),
-    .Y(data_out_sint[3])
+    .Y(data_out_e[3])
   );
   NOR _270_ (
     .A(counter[0]),
@@ -819,7 +819,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _273_ (
     .A(_050_),
     .B(_052_),
-    .Y(data_out_sint[4])
+    .Y(data_out_e[4])
   );
   NOR _274_ (
     .A(counter[0]),
@@ -839,7 +839,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _277_ (
     .A(_053_),
     .B(_055_),
-    .Y(data_out_sint[5])
+    .Y(data_out_e[5])
   );
   NOR _278_ (
     .A(counter[0]),
@@ -859,7 +859,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _281_ (
     .A(_056_),
     .B(_058_),
-    .Y(data_out_sint[6])
+    .Y(data_out_e[6])
   );
   NOR _282_ (
     .A(counter[0]),
@@ -879,7 +879,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _285_ (
     .A(_059_),
     .B(_061_),
-    .Y(data_out_sint[7])
+    .Y(data_out_e[7])
   );
   NOR _286_ (
     .A(counter[0]),
@@ -899,7 +899,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _289_ (
     .A(_062_),
     .B(_064_),
-    .Y(data_out_sint[8])
+    .Y(data_out_e[8])
   );
   NOR _290_ (
     .A(counter[0]),
@@ -919,7 +919,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _293_ (
     .A(_065_),
     .B(_067_),
-    .Y(data_out_sint[9])
+    .Y(data_out_e[9])
   );
   NOR _294_ (
     .A(counter[0]),
@@ -939,7 +939,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _297_ (
     .A(_068_),
     .B(_070_),
-    .Y(data_out_sint[10])
+    .Y(data_out_e[10])
   );
   NOR _298_ (
     .A(counter[0]),
@@ -959,7 +959,7 @@ module byte_unstriping_sintetizado(clk_2f, clk, valid_0, lane_0, valid_1, lane_1
   NOR _301_ (
     .A(_071_),
     .B(_073_),
-    .Y(data_out_sint[11])
+    .Y(data_out_e[11])
   );
   (* src = "byte_unstriping_sintetizado.v:35" *)
   DFF _302_ (

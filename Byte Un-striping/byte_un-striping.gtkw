@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Oct  6 19:18:45 2021
+[*]
+[dumpfile] "/home/raque/Escritorio/Share/byte-unstriping/prueba_byte_unstriping.vcd"
+[dumpfile_mtime] "Wed Oct  6 19:16:05 2021"
+[dumpfile_size] 35541
+[savefile] "/home/raque/Escritorio/Share/byte-unstriping/byte_un-striping.gtkw"
+[timestart] 0
+[size] 1230 551
+[pos] -1 -1
+*-6.638360 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench_byte_unstriping.
+[sst_width] 233
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 127
+@28
+testbench_byte_unstriping.probador_byte_unstriping.clk
+testbench_byte_unstriping.probador_byte_unstriping.clk_2f
+@22
+testbench_byte_unstriping.probador_byte_unstriping.lane_0[31:0]
+testbench_byte_unstriping.probador_byte_unstriping.lane_1[31:0]
+@28
+testbench_byte_unstriping.probador_byte_unstriping.valid_0
+@29
+testbench_byte_unstriping.probador_byte_unstriping.valid_1
+@22
+testbench_byte_unstriping.probador_byte_unstriping.data_out_c[31:0]
+testbench_byte_unstriping.probador_byte_unstriping.data_out_e[31:0]
+@28
+testbench_byte_unstriping.probador_byte_unstriping.valid_out_c
+testbench_byte_unstriping.probador_byte_unstriping.valid_out_e
+testbench_byte_unstriping.probador_byte_unstriping.checker[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
