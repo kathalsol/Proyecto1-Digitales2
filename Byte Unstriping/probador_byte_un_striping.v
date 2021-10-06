@@ -28,7 +28,7 @@ module probador_byte_un_striping (
     end
 
     initial begin
-		$dumpfile("prueba_unbyte.vcd");	// Nombre de archivo del "dump"
+		$dumpfile("prueba_byte_unstriping.vcd");	// Nombre de archivo del "dump"
 		$dumpvars;			// Directiva para "dumpear" variables
 
     //Sincronizacion con el flanco positivo del reloj. Asignar valores de las entradas

@@ -29,6 +29,8 @@ module byte_un_striping (
                             output reg valid_out  );
 
    reg [1:0] counter ;
+
+ 
 	
     always @(posedge clk_2f ) begin
 		if (valid_0 == 0 )begin
@@ -46,7 +48,6 @@ module byte_un_striping (
         end
 
         else begin
-
             case (counter)
                 2'b00 :  begin
                     data_out  = lane_0;
@@ -68,8 +69,6 @@ module byte_un_striping (
                     data_out  = lane_1;
                     valid_out = valid_0;
                 end
-            
-        
             endcase
         end
     
