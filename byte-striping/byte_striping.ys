@@ -1,0 +1,13 @@
+read_verilog byte_striping_c.v
+hierarchy -check -top byte_striping_c
+proc_arst -global_arst !valid_0_c low;
+proc_arst -global_arst !lane_0_c low;
+proc_arst -global_arst !valid_1_c low;
+proc_arst -global_arst !lane_1_c low;
+proc_arst -global_arst !contador low;
+opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+clean
+write_verilog byte_striping_e.v
