@@ -1,4 +1,4 @@
-codigo:
+word32_test:
 	iverilog -o test_word32_8bits testbench_word32_8bits.v
 	vvp test_word32_8bits
 	gtkwave prueba_word32_8bits.vcd
@@ -11,4 +11,4 @@ word32_8bits:
 	sed -i 's/Data_out_c/Data_out_e/g' word32_8bits_e.v
 
 cmos_cells:
-	sed -i '2i\`include "cmos_cells.v"\' testbench.v
+	sed -i '2i\`include "cmos_cells.v"\' testbench_word32_8bits.v

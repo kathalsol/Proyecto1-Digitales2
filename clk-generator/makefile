@@ -1,4 +1,4 @@
-test:
+clk_test:
 	iverilog -o test_clk testbench_clk.v
 	vvp test_clk
 	gtkwave prueba_clk.vcd
