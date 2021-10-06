@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Oct  6 04:45:02 2021
+[*]
+[dumpfile] "/home/raque/Escritorio/Share/byte-unstriping/prueba_byte_unstriping.vcd"
+[dumpfile_mtime] "Wed Oct  6 04:43:01 2021"
+[dumpfile_size] 43561
+[savefile] "/home/raque/Escritorio/Share/byte-unstriping/byte_unstriping.gtkw"
+[timestart] 0
+[size] 1230 551
+[pos] -1 -1
+*-6.499029 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 127
+@28
+testbench_byte_striping.clk
+testbench_byte_striping.clk_2f
+@22
+testbench_byte_striping.data_out[31:0]
+testbench_byte_striping.data_out_sint[31:0]
+testbench_byte_striping.lane_0[31:0]
+testbench_byte_striping.lane_1[31:0]
+@28
+testbench_byte_striping.valid_0
+testbench_byte_striping.valid_1
+testbench_byte_striping.valid_out
+testbench_byte_striping.valid_out_sint
+[pattern_trace] 1
+[pattern_trace] 0
