@@ -60,71 +60,64 @@ module parallel_serial_e(clk_32f, reset, valid_in, Data_in, Data_out_e);
     _3_ = Data_out_e;
     _5_ = data2send;
     (* src = "parallel_serial_e.v:20" *)
-    casez (reset)
-      /* src = "parallel_serial_e.v:20" */
-      1'h1:
-          (* src = "parallel_serial_e.v:21" *)
-          casez (contador)
-            /* src = "parallel_serial_e.v:22" */
-            3'h0:
-              begin
-                _3_ = data2send[7];
-                _4_ = 3'h1;
-              end
-            /* src = "parallel_serial_e.v:27" */
-            3'h1:
-              begin
-                _3_ = data2send[6];
-                _4_ = 3'h2;
-              end
-            /* src = "parallel_serial_e.v:32" */
-            3'h2:
-              begin
-                _3_ = data2send[5];
-                _4_ = 3'h3;
-              end
-            /* src = "parallel_serial_e.v:37" */
-            3'h3:
-              begin
-                _3_ = data2send[4];
-                _4_ = 3'h4;
-              end
-            /* src = "parallel_serial_e.v:42" */
-            3'h4:
-              begin
-                _3_ = data2send[3];
-                _4_ = 3'h5;
-              end
-            /* src = "parallel_serial_e.v:47" */
-            3'h5:
-              begin
-                _3_ = data2send[2];
-                _4_ = 3'h6;
-              end
-            /* src = "parallel_serial_e.v:52" */
-            3'h6:
-              begin
-                _3_ = data2send[1];
-                _4_ = 3'h7;
-              end
-            /* src = "parallel_serial_e.v:57" */
-            3'h7:
-              begin
-                _3_ = data2send[0];
-                _4_ = 3'h0;
-                (* src = "parallel_serial_e.v:61" *)
-                casez (valid_in)
-                  /* src = "parallel_serial_e.v:61" */
-                  1'h1:
-                      _5_ = Data_in;
-                  /* src = "parallel_serial_e.v:62" */
-                  default:
-                      _5_ = 8'hbc;
-                endcase
-              end
+    casez (contador)
+      /* src = "parallel_serial_e.v:21" */
+      3'h0:
+        begin
+          _3_ = data2send[7];
+          _4_ = 3'h1;
+        end
+      /* src = "parallel_serial_e.v:26" */
+      3'h1:
+        begin
+          _3_ = data2send[6];
+          _4_ = 3'h2;
+        end
+      /* src = "parallel_serial_e.v:31" */
+      3'h2:
+        begin
+          _3_ = data2send[5];
+          _4_ = 3'h3;
+        end
+      /* src = "parallel_serial_e.v:36" */
+      3'h3:
+        begin
+          _3_ = data2send[4];
+          _4_ = 3'h4;
+        end
+      /* src = "parallel_serial_e.v:41" */
+      3'h4:
+        begin
+          _3_ = data2send[3];
+          _4_ = 3'h5;
+        end
+      /* src = "parallel_serial_e.v:46" */
+      3'h5:
+        begin
+          _3_ = data2send[2];
+          _4_ = 3'h6;
+        end
+      /* src = "parallel_serial_e.v:51" */
+      3'h6:
+        begin
+          _3_ = data2send[1];
+          _4_ = 3'h7;
+        end
+      /* src = "parallel_serial_e.v:56" */
+      3'h7:
+        begin
+          _3_ = data2send[0];
+          _4_ = 3'h0;
+          (* src = "parallel_serial_e.v:60" *)
+          casez (valid_in)
+            /* src = "parallel_serial_e.v:60" */
+            1'h1:
+                _5_ = Data_in;
+            /* src = "parallel_serial_e.v:61" */
             default:
-                /* empty */;
+                _5_ = 8'hbc;
           endcase
+        end
       default:
           /* empty */;
     endcase

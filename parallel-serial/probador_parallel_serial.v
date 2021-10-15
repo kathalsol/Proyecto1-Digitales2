@@ -98,8 +98,6 @@ module probador_parallel_serial (
 		@(posedge clk_32f);
 		@(posedge clk_32f);
 		@(posedge clk_32f);
-		@(posedge clk_32f);
-		@(posedge clk_32f);
 		$finish; 
 	end
 

@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Thu Oct 14 23:30:02 2021
+[*] Fri Oct 15 16:38:24 2021
 [*]
 [dumpfile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/parallel-serial/prueba_parallel_serial.vcd"
-[dumpfile_mtime] "Thu Oct 14 23:27:21 2021"
-[dumpfile_size] 6405
+[dumpfile_mtime] "Fri Oct 15 16:37:21 2021"
+[dumpfile_size] 6317
 [savefile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/parallel-serial/prueba_parallel_serial.gtkw"
 [timestart] 0
 [size] 1294 599
 [pos] -51 -1
-*-15.039285 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-15.026347 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [sst_width] 233
 [signals_width] 142
 [sst_expanded] 1
