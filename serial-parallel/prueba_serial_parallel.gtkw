@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Oct 18 04:31:19 2021
+[*]
+[dumpfile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/serial-parallel/prueba_serial_parallel.vcd"
+[dumpfile_mtime] "Mon Oct 18 04:21:15 2021"
+[dumpfile_size] 11936
+[savefile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/serial-parallel/prueba_serial_parallel.gtkw"
+[timestart] 0
+[size] 1294 599
+[pos] -51 -1
+*-15.452235 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+testbench_serial_parallel.clk_32f
+testbench_serial_parallel.Data_in
+@200
+-conductual
+@28
+testbench_serial_parallel.serial_parallel_1.BC_count[1:0]
+testbench_serial_parallel.serial_parallel_1.active
+testbench_serial_parallel.valid_out_c
+@22
+testbench_serial_parallel.Data_out_c[7:0]
+@200
+-estructural
+@28
+testbench_serial_parallel.serial_parallel_2.BC_count[1:0]
+testbench_serial_parallel.serial_parallel_2.active
+testbench_serial_parallel.valid_out_e
+@22
+testbench_serial_parallel.Data_out_e[7:0]
+@200
+-checker
+@28
+testbench_serial_parallel.probador_1.checker[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
