@@ -1,0 +1,11 @@
+read_verilog byte_un_striping_c.v
+hierarchy -check -top byte_un_striping_c
+proc_arst -global_arst !valid_out_c low;
+proc_arst -global_arst !Data_out_c low;
+proc_arst -global_arst !contador high;
+opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+clean
+write_verilog byte_un_striping_e.v

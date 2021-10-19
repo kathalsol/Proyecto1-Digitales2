@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Oct  6 22:54:30 2021
+[*]
+[dumpfile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/byte-un-striping/prueba_byte_un_striping.vcd"
+[dumpfile_mtime] "Wed Oct  6 22:53:00 2021"
+[dumpfile_size] 7376
+[savefile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/byte-un-striping/prueba_byte_un_striping.gtkw"
+[timestart] 0
+[size] 1294 599
+[pos] -51 -1
+*-13.177694 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+testbench_byte_un_striping.clk_2f
+testbench_byte_un_striping.valid_0
+@22
+testbench_byte_un_striping.lane_0[31:0]
+@28
+testbench_byte_un_striping.valid_1
+@22
+testbench_byte_un_striping.lane_1[31:0]
+@200
+-conductual
+@28
+testbench_byte_un_striping.valid_out_c
+@22
+testbench_byte_un_striping.Data_out_c[31:0]
+@200
+-estructural
+@28
+testbench_byte_un_striping.valid_out_e
+@22
+testbench_byte_un_striping.Data_out_e[31:0]
+@200
+-checker
+@28
+testbench_byte_un_striping.probador_1.checker[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

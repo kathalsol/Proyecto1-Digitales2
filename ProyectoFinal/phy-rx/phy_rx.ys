@@ -1,0 +1,22 @@
+read_verilog phy_rx_c.v
+hierarchy -check -top phy_rx_c
+proc_arst -global_arst !valid_out_c;
+proc_arst -global_arst !Data_out_c;
+proc_arst -global_arst !contador;
+proc_arst -global_arst !valid_out_c;
+proc_arst -global_arst !Data_out_c;
+proc_arst -global_arst !contador;
+proc_arst -global_arst !memoria;
+proc_arst -global_arst !valid;
+proc_arst -global_arst !valid_out_c;
+proc_arst -global_arst !Data_out_c;
+proc_arst -global_arst !memoria;
+proc_arst -global_arst !contador;
+proc_arst -global_arst !BC_count;
+proc_arst -global_arst !active;
+opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+clean
+write_verilog phy_rx_e.v

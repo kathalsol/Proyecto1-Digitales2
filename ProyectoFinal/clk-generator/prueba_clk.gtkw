@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Oct  6 15:22:26 2021
+[*]
+[dumpfile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/Stuff that is functional/clk-generator/prueba_clk.vcd"
+[dumpfile_mtime] "Tue Oct  5 21:07:42 2021"
+[dumpfile_size] 8925
+[savefile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/Stuff that is functional/clk-generator/prueba_clk.gtkw"
+[timestart] 0
+[size] 1294 599
+[pos] -1 -1
+*-14.805495 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+testbench_clk.clk_32f
+@200
+-conductual
+@28
+testbench_clk.clk_4f_c
+testbench_clk.clk_2f_c
+testbench_clk.clk_f_c
+@200
+-estructural
+@28
+testbench_clk.clk_4f_e
+testbench_clk.clk_2f_e
+testbench_clk.clk_f_e
+@200
+-checker
+@28
+testbench_clk.probador_1.checker[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

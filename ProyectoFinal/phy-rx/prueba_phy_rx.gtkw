@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct 19 20:20:23 2021
+[*]
+[dumpfile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/phy-rx/prueba_phy_rx.vcd"
+[dumpfile_mtime] "Tue Oct 19 20:19:11 2021"
+[dumpfile_size] 62885
+[savefile] "/media/sf_IE-0523/Proyectos/Proyecto1Digitales2/phy-rx/prueba_phy_rx.gtkw"
+[timestart] 0
+[size] 1294 599
+[pos] -51 -1
+*-16.830343 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+testbench_phy_rx.clk_32f
+testbench_phy_rx.clk_4f
+testbench_phy_rx.clk_2f
+testbench_phy_rx.Data_in_0
+testbench_phy_rx.Data_in_1
+@200
+-conductual
+@28
+testbench_phy_rx.valid_out_c
+@22
+testbench_phy_rx.Data_out_c[31:0]
+@200
+-estructural
+@28
+testbench_phy_rx.valid_out_e
+@22
+testbench_phy_rx.Data_out_e[31:0]
+@200
+-checker
+@28
+testbench_phy_rx.probador_phy_rx1.checker[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

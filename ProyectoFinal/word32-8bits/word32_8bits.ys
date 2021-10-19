@@ -1,0 +1,11 @@
+read_verilog word32_8bits_c.v
+hierarchy -check -top word32_8bits_c
+proc_arst -global_arst !valid_out_c low;
+proc_arst -global_arst !Data_out_c low;
+proc_arst -global_arst !contador low;
+opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+clean
+write_verilog word32_8bits_e.v

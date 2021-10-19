@@ -1,0 +1,11 @@
+read_verilog parallel_serial_c.v
+hierarchy -check -top parallel_serial_c
+proc_arst -global_arst !Data_out_c low;
+proc_arst -global_arst !data2send ''hBC';
+proc_arst -global_arst !contador low;
+opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+clean
+write_verilog parallel_serial_e.v
