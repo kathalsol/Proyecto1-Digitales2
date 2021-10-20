@@ -1,4 +1,4 @@
-bits_test:
+bits8_test:
 	iverilog -o test_bits8_32word testbench_bits8_32word.v
 	vvp test_bits8_32word
 	gtkwave prueba_bits8_32word.vcd
