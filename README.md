@@ -1,7 +1,6 @@
 # Circuitos Digitales II IE-0523
 ## Proyecto 1: Diseño de la capa PHY de la interfaz PCle
-*Ultima versión: 6 octubre 2021*
+*Ultima versión: 21 octubre 2021*
 
 
-A la fecha de la última versión, se incluye el primer avance del proyecto (Generador de relojes, lógica 32b/8b, lógica 8b/32b, byte striping y byte un-striping).
-Cada una de las implementaciones se encuentran en la carpeta con su nombre, incluyendo la implementación conductual, síntesis, probadores, banco de pruebas y makefile.  
+A la fecha de la última versión, se incluye el proyecto final del diseño de \textit{la capa PHY de la interfaz PCle}, el diseño fue realizado empleando una descripción conductual en el lenguaje Verilog de las distintas etapas, que a su vez cumple la función de ser un verificador automático y además, una descripción estructural generada a partir del sintetizado Yosys. Lo anterior con el fin de simular el comportamiento de la capa PHY por medio de la comunicación entre la capa que transmite los datos y la capa los recibe. El proyecto se creó por medio de distintos módulos, desde los más simples como el generador de relojes, la lógica 32b/8b y 8b/32b por medio del uso de cases los cuales tienen de fondo la misma lógica que los multiplexores. Luego, los módulos serial-paralelo y paralelo-serial, hasta crear por medio de estos el módulo que recibe los datos phy\_rx y el que los transmite phy\_tx. Al final, con estos dos módulos se forma la capa final correspondiente a la capa PHY.  
